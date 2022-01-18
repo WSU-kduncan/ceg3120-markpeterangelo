@@ -114,7 +114,7 @@ GitHub;
     -Select the New SSH key button:
     -Lastly, copy your public SSH key which is stored in a file with a .pub file extension in your .ssh folder
 
-Actions(don't do yet)
+Actions(don't do yet) 
 
 Resources;
 
