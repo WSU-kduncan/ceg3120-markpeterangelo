@@ -29,25 +29,24 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    brooklyn_99_quotes = [
-        'I\'m the human form of the 💯 emoji.',
+    waterboy_quotes = [
+        'Bobby Boucher, what did momma tell you about girls!',
         'Bingpot!',
         (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
+            'My Mama says that alligators are ornery because they got all them teeth and no toothbrush.'
         ),
     ]
 
-    hitchhiker_quotes = [
-        'There is an art, it says, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss.',
-        'It is a mistake to think you can solve any major problems just with potatoes.',
-        'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
-        'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
+    stepbrother_quotes = [
+        'That is so funny, the last time I heard that I laughed so hard I fell off my dinosaur.',
+        'Why are you so sweaty? I was watching Cops.',
+        'When I was a kid...I wanted to be a Tyrannosaurus Rex more than anything in the world. I made my arms short and I roamed the backyard, I chased the neighborhood cats, I growled and I roared. Everybody knew me and was afraid of me.',
+        'You and your mom are hillbillies. This is a house of learned doctors.',
     ]
 
-    if message.content == 'towel!':
-        #response = random.choice(brooklyn_99_quotes)
-        response = random.choice(hitchhiker_quotes)
+    if message.content == 'talk!':
+        #response = random.choice(waterboy_quotes)
+        response = random.choice(stepbrother_quotes)
         await message.channel.send(response)
 
 client.run(TOKEN)
