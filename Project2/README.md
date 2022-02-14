@@ -12,7 +12,7 @@
     - Attach it to your VPC
     - 10.0.0.0/28
     
-![Subnet] ("https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png")
+![Subnet] (https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png)
 
 3. Create an internet gateway
     - Attach it to your VPC
