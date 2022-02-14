@@ -11,26 +11,33 @@
     - Specify a /28 private IP address range
     - Attach it to your VPC
     - 10.0.0.0/28
+    
 ![Subnet] ("https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png")
 
 3. Create an internet gateway
     - Attach it to your VPC
-![Gateway](Gateway.png)
+  
+![Gateway]("https://user-images.githubusercontent.com/70331126/153891909-689a742c-3109-4724-888f-3163f25bec3b.png")
+
 
 
 4. Create a route table
     - Attach it to your VPC
     - Associate it with your subnet
     - Add a routing table rule that sends traffic to all destinations to your internet gateway
- ![Route Table](Route.png)
+    
+ ![Route Table]("https://user-images.githubusercontent.com/70331126/153892031-a8c61b0e-d425-40b2-b06b-d8272df856cd.png")
+
 
 
 5. Create a security group
     - Allow SSH for a set of trusted networks including:
-      - Your home / where you usually connect to your instances from
-      - Wright State (addresses starting with 130.108)
-      - Instances within the VPC
-![Security Group](SecurityGroup.png)
+     - Your home / where you usually connect to your instances from
+     - Wright State (addresses starting with 130.108)
+     - Instances within the VPC
+     
+![Security Group]("https://user-images.githubusercontent.com/70331126/153892192-ede87564-a908-4d65-ab31-216472106d43.png")
+
 - Inbound Rules Above
 
 # Part 2 
