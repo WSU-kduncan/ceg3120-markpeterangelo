@@ -17,7 +17,7 @@
 3. Create an internet gateway
     - Attach it to your VPC
   
-![Gateway]("https://user-images.githubusercontent.com/70331126/153891909-689a742c-3109-4724-888f-3163f25bec3b.png")
+![Gateway](https://user-images.githubusercontent.com/70331126/153891909-689a742c-3109-4724-888f-3163f25bec3b.png)
 
 
 
