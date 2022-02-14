@@ -3,14 +3,14 @@
 1. Create a VPC
     - Specify a /24 private IP address range
       - 10.0.0.0/24
-  ![VPC]("https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png")
+  ![VPC] ("https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png")
 
 
 2. Create a subnet
     - Specify a /28 private IP address range
     - Attach it to your VPC
         - 10.0.0.0/28
- ![Subnet](Subnet.png)
+ ![Subnet]("https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png")
 
 3. Create an internet gateway
     - Attach it to your VPC
