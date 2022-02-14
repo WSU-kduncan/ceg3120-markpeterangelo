@@ -4,7 +4,7 @@
     - Specify a /24 private IP address range
     - 10.0.0.0/24
   
-[VPC] ("https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png")
+[VPC](https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png)
 
 
 2. Create a subnet
@@ -12,7 +12,7 @@
     - Attach it to your VPC
     - 10.0.0.0/28
     
-![Subnet] (https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png)
+![Subnet](https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png)
 
 3. Create an internet gateway
     - Attach it to your VPC
@@ -26,7 +26,7 @@
     - Associate it with your subnet
     - Add a routing table rule that sends traffic to all destinations to your internet gateway
     
- ![Route Table] ("https://user-images.githubusercontent.com/70331126/153892031-a8c61b0e-d425-40b2-b06b-d8272df856cd.png")
+ ![Route Table](https://user-images.githubusercontent.com/70331126/153892031-a8c61b0e-d425-40b2-b06b-d8272df856cd.png)
 
 
 
@@ -36,7 +36,7 @@
      - Wright State (addresses starting with 130.108)
      - Instances within the VPC
      
-![Security Group] ("https://user-images.githubusercontent.com/70331126/153892192-ede87564-a908-4d65-ab31-216472106d43.png")
+![Security Group](https://user-images.githubusercontent.com/70331126/153892192-ede87564-a908-4d65-ab31-216472106d43.png)
 
 - Inbound Rules Above
 
@@ -53,7 +53,7 @@
     To attach the instance to the VPC, the  next page shows network details. Under the network I attached the PETERANGELO-VPC to the instance.
     This caused the subnet to be attached to the instance now.
     
-![Instance Created] ("https://user-images.githubusercontent.com/70331126/153892389-c6ac05fe-51f2-4f34-996c-b2a7161bb7ef.png")
+![Instance Created](https://user-images.githubusercontent.com/70331126/153892389-c6ac05fe-51f2-4f34-996c-b2a7161bb7ef.png)
 
 3. Determine whether a Public IPv4 address will be auto-assigned to the instance. Justify your choice to do so (or not do so)
 
@@ -77,7 +77,7 @@
     a tag to this IP called Peterangelo-EPI. Then I clicked on Action then Assoacite Elastic IP and associated the this IP to the instance we created. 
 
 8. Create a screenshot your instance details and add it to your project write up.
-![Instance With Details] ("https://user-images.githubusercontent.com/70331126/153892508-8696fae7-6a0d-40f8-b7a5-89f0e6a9d6f2.png")
+![Instance With Details](https://user-images.githubusercontent.com/70331126/153892508-8696fae7-6a0d-40f8-b7a5-89f0e6a9d6f2.png)
 
 
 
@@ -88,7 +88,7 @@
   
 10. Create a screenshot your ssh connection to your instance
 and add it to your project write up - make sure it shows your new hostname.
-![Connecting to Instance] ("https://user-images.githubusercontent.com/70331126/153892706-8197040b-d45d-4da4-8cd3-72af2b302c09.png")
+![Connecting to Instance](https://user-images.githubusercontent.com/70331126/153892706-8197040b-d45d-4da4-8cd3-72af2b302c09.png)
 
 
 Note: You may delete all created resources once done to save monies. No really, trash it - especially the instance and disassociate and release the elastic ip
