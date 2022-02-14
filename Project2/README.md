@@ -3,7 +3,8 @@
 1. Create a VPC
     - Specify a /24 private IP address range
       - 10.0.0.0/24
-![VPC](VPC.png)
+  ![VPC]("https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png")
+
 
 2. Create a subnet
     - Specify a /28 private IP address range
