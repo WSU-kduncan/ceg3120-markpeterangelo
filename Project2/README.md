@@ -17,7 +17,7 @@
 3. Create an internet gateway
     - Attach it to your VPC
   
-![Gateway]("https://user-images.githubusercontent.com/70331126/153891909-689a742c-3109-4724-888f-3163f25bec3b.png")
+![Gateway] ("https://user-images.githubusercontent.com/70331126/153891909-689a742c-3109-4724-888f-3163f25bec3b.png")
 
 
 
@@ -26,7 +26,7 @@
     - Associate it with your subnet
     - Add a routing table rule that sends traffic to all destinations to your internet gateway
     
- ![Route Table]("https://user-images.githubusercontent.com/70331126/153892031-a8c61b0e-d425-40b2-b06b-d8272df856cd.png")
+ ![Route Table] ("https://user-images.githubusercontent.com/70331126/153892031-a8c61b0e-d425-40b2-b06b-d8272df856cd.png")
 
 
 
@@ -36,7 +36,7 @@
      - Wright State (addresses starting with 130.108)
      - Instances within the VPC
      
-![Security Group]("https://user-images.githubusercontent.com/70331126/153892192-ede87564-a908-4d65-ab31-216472106d43.png")
+![Security Group] ("https://user-images.githubusercontent.com/70331126/153892192-ede87564-a908-4d65-ab31-216472106d43.png")
 
 - Inbound Rules Above
 
@@ -53,7 +53,7 @@
     To attach the instance to the VPC, the  next page shows network details. Under the network I attached the PETERANGELO-VPC to the instance.
     This caused the subnet to be attached to the instance now.
     
-![Instance Created](Instance.png)
+![Instance Created] ("https://user-images.githubusercontent.com/70331126/153892389-c6ac05fe-51f2-4f34-996c-b2a7161bb7ef.png")
 
 3. Determine whether a Public IPv4 address will be auto-assigned to the instance. Justify your choice to do so (or not do so)
 
@@ -77,7 +77,8 @@
     a tag to this IP called Peterangelo-EPI. Then I clicked on Action then Assoacite Elastic IP and associated the this IP to the instance we created. 
 
 8. Create a screenshot your instance details and add it to your project write up.
-![Instance With Details](Instance2.png)
+![Instance With Details] ("https://user-images.githubusercontent.com/70331126/153892508-8696fae7-6a0d-40f8-b7a5-89f0e6a9d6f2.png")
+
 
 
 9. ssh in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
@@ -85,8 +86,10 @@
     Change host name by typing sudo hostnamectl set-hostname Peterangelo-UbuntuAMI
 
   
-10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
-![Connecting to Instance](connect.png)
+10. Create a screenshot your ssh connection to your instance
+and add it to your project write up - make sure it shows your new hostname.
+![Connecting to Instance] ("https://user-images.githubusercontent.com/70331126/153892706-8197040b-d45d-4da4-8cd3-72af2b302c09.png")
+
 
 Note: You may delete all created resources once done to save monies. No really, trash it - especially the instance and disassociate and release the elastic ip
 
