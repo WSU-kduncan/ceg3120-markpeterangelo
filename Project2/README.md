@@ -3,6 +3,7 @@
 1. Create a VPC
     - Specify a /24 private IP address range
     - 10.0.0.0/24
+    * A VPC gives an enterprise the ability to define and control a virtual network that is logically isolated from all other public cloud tenants, creating a private, secure place on the public cloud.
   
 ![VPC](https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png)
 
@@ -11,11 +12,13 @@
     - Specify a /28 private IP address range
     - Attach it to your VPC
     - 10.0.0.0/28
+    * Subnets are designed to reduce traffic by grouping large networks into smaller, interconnected ones.
     
 ![Subnet](https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png)
 
 3. Create an internet gateway
     - Attach it to your VPC
+    * An Internet gateway is a network node that connects two different networks that use different protocols for communicating. Internet gateway is where data stops on its way to or from other networks.
   
 ![Gateway](https://user-images.githubusercontent.com/70331126/153891909-689a742c-3109-4724-888f-3163f25bec3b.png)
 
@@ -25,6 +28,7 @@
     - Attach it to your VPC
     - Associate it with your subnet
     - Add a routing table rule that sends traffic to all destinations to your internet gateway
+    * A routing table has ruled dictating where to direct your network traffic
     
  ![Route Table](https://user-images.githubusercontent.com/70331126/153892031-a8c61b0e-d425-40b2-b06b-d8272df856cd.png)
 
@@ -35,7 +39,7 @@
      - Your home / where you usually connect to your instances from
      - Wright State (addresses starting with 130.108)
      - Instances within the VPC
-     
+     * A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
 ![Security Group](https://user-images.githubusercontent.com/70331126/153892192-ede87564-a908-4d65-ab31-216472106d43.png)
 
 - Inbound Rules Above
