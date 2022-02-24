@@ -3,34 +3,45 @@
 1. Create a VPC
     - Specify a /24 private IP address range
     - 10.0.0.0/24
+    * A VPC gives an enterprise the ability to define and control a virtual network that is logically isolated from all other public cloud tenants, creating a private, secure place on the public cloud.
   
-![VPC] ("https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png")
+![VPC](https://user-images.githubusercontent.com/70331126/153887650-054f1fc1-4924-422d-b839-e69a899c0905.png)
 
 
 2. Create a subnet
     - Specify a /28 private IP address range
     - Attach it to your VPC
     - 10.0.0.0/28
-![Subnet] ("https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png")
+    * Subnets are designed to reduce traffic by grouping large networks into smaller, interconnected ones.
+    
+![Subnet](https://user-images.githubusercontent.com/70331126/153888485-46e14e20-3ed1-4ac1-8deb-b03e668078da.png)
 
 3. Create an internet gateway
     - Attach it to your VPC
-![Gateway](Gateway.png)
+    * An Internet gateway is a network node that connects two different networks that use different protocols for communicating. Internet gateway is where data stops on its way to or from other networks.
+  
+![Gateway](https://user-images.githubusercontent.com/70331126/153891909-689a742c-3109-4724-888f-3163f25bec3b.png)
+
 
 
 4. Create a route table
     - Attach it to your VPC
     - Associate it with your subnet
     - Add a routing table rule that sends traffic to all destinations to your internet gateway
- ![Route Table](Route.png)
+    * A routing table has ruled dictating where to direct your network traffic
+    
+ ![Route Table](https://user-images.githubusercontent.com/70331126/153892031-a8c61b0e-d425-40b2-b06b-d8272df856cd.png)
+
 
 
 5. Create a security group
     - Allow SSH for a set of trusted networks including:
-      - Your home / where you usually connect to your instances from
-      - Wright State (addresses starting with 130.108)
-      - Instances within the VPC
-![Security Group](SecurityGroup.png)
+     - Your home / where you usually connect to your instances from
+     - Wright State (addresses starting with 130.108)
+     - Instances within the VPC
+     * A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
+![Security Group](https://user-images.githubusercontent.com/70331126/153892192-ede87564-a908-4d65-ab31-216472106d43.png)
+
 - Inbound Rules Above
 
 # Part 2 
@@ -46,7 +57,7 @@
     To attach the instance to the VPC, the  next page shows network details. Under the network I attached the PETERANGELO-VPC to the instance.
     This caused the subnet to be attached to the instance now.
     
-![Instance Created](Instance.png)
+![Instance Created](https://user-images.githubusercontent.com/70331126/153892389-c6ac05fe-51f2-4f34-996c-b2a7161bb7ef.png)
 
 3. Determine whether a Public IPv4 address will be auto-assigned to the instance. Justify your choice to do so (or not do so)
 
@@ -70,7 +81,8 @@
     a tag to this IP called Peterangelo-EPI. Then I clicked on Action then Assoacite Elastic IP and associated the this IP to the instance we created. 
 
 8. Create a screenshot your instance details and add it to your project write up.
-![Instance With Details](Instance2.png)
+![Instance With Details](https://user-images.githubusercontent.com/70331126/153892508-8696fae7-6a0d-40f8-b7a5-89f0e6a9d6f2.png)
+
 
 
 9. ssh in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
@@ -78,8 +90,10 @@
     Change host name by typing sudo hostnamectl set-hostname Peterangelo-UbuntuAMI
 
   
-10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname.
-![Connecting to Instance](connect.png)
+10. Create a screenshot your ssh connection to your instance
+and add it to your project write up - make sure it shows your new hostname.
+![Connecting to Instance](https://user-images.githubusercontent.com/70331126/153892706-8197040b-d45d-4da4-8cd3-72af2b302c09.png)
+
 
 Note: You may delete all created resources once done to save monies. No really, trash it - especially the instance and disassociate and release the elastic ip
 
