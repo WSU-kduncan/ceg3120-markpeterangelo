@@ -35,6 +35,6 @@ ssh Web-Server-2
 * `sudo systemctl restart apache2`
 
 
-![Server1]()
+![Server1](https://user-images.githubusercontent.com/70331126/158909006-c3817fa9-4a98-419d-b625-2bf3efb8c72b.png)
 
-![Server2]()
+![Server2](https://user-images.githubusercontent.com/70331126/158909015-3e8c4a47-ae66-4190-aa84-e9395b54bce9.png)
