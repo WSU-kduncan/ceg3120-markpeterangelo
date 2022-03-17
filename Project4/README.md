@@ -25,6 +25,8 @@ ssh Web-Server-2
 
 * https://www.haproxy.com/blog/the-four-essential-sections-of-an-haproxy-configuration/ https://www.haproxy.com/blog/the-four-essential-sections-of-an-haproxy-configuration/
 
+* https://discourse.haproxy.org/t/question-about-restarting-the-service/4134
+
 ## 4.
 * The files modified were /var/www/html/index.html was modified. i moved the 2 .html files to the default html diretory, 
 
